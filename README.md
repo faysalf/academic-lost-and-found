@@ -65,4 +65,7 @@ Every day after the first setup, we only need:
 cd academic-lost-and-found/lost_and_found
 source venv/bin/activate
 python manage.py runserver
+
+run on the same IP:
+venv/bin/python manage.py runserver 0.0.0.0:8000
 ```

@@ -14,7 +14,7 @@ class SignUpView(generics.CreateAPIView):
     permission_classes = [permissions.AllowAny]
 
 
-class LoginView(APIView):
+class LoginView(generics.GenericAPIView):
     """
     POST /api/auth/login/
     Body: {"phone": "...", "password": "..."}
@@ -25,9 +25,10 @@ class LoginView(APIView):
     who is acting.
     """
     permission_classes = [permissions.AllowAny]
+    serializer_class = LoginSerializer
 
     def post(self, request, *args, **kwargs):
-        serializer = LoginSerializer(data=request.data, context={'request': request})
+        serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data['user']
         return Response(

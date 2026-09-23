@@ -22,7 +22,7 @@ class LoginView(generics.GenericAPIView):
     No token is issued. On success this simply confirms the credentials
     and returns the user's id, which the client attaches to later
     requests (e.g. as the "created_by"/user id on a post) to identify
-    who is acting.
+    the owner.
     """
     permission_classes = [permissions.AllowAny]
     serializer_class = LoginSerializer

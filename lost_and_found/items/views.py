@@ -21,3 +21,14 @@ class PostListCreateView(generics.ListCreateAPIView):
         if post_type:
             queryset = queryset.filter(type__iexact=post_type)
         return queryset
+
+
+class PostDetailView(generics.RetrieveUpdateDestroyAPIView):
+    """
+    GET    /api/posts/<id>/ -> view one post
+    PATCH  /api/posts/<id>/ -> update one post, e.g. {"is_owner_given": true}
+    DELETE /api/posts/<id>/ -> delete one post
+    """
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+    permission_classes = [permissions.AllowAny]

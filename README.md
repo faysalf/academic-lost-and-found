@@ -9,7 +9,7 @@ A simple backend for a campus lost-and-found board. Students can sign up, log in
 - **PostgreSQL** — the database
 - **django-environ** — loads settings (secret key, DB credentials) from a `.env` file instead of hardcoding them
 
-## What's in here
+## Apps folders we used
 
 - `accounts` app — a custom User model that logs in with **phone number & Password**.
 - `items` app — the `Post` model (a lost or found item) and its APIs: create, list, update, delete.

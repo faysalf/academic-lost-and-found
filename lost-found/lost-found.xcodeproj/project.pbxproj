@@ -58,6 +58,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0DA9C93067D3FB00FEC132 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D083067683A000F2455 /* lost_foundApp.swift */,
+				7AB87D063067683A000F2455 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7A0DA9CA3067D3FC00FEC132 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7A0DA9D33067D45300FEC132 /* Persistance */,
+				7A0DA9D23067D40500FEC132 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7A0DA9CB3067D3FD00FEC132 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D1130676C83000F2455 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A0DA9CC3067D3FD00FEC132 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D1330676C99000F2455 /* APIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7A0DA9CD3067D3FE00FEC132 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D1530676C99000F2455 /* AppState.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7A0DA9CE3067D3FF00FEC132 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A0DA9CF3067D40100FEC132 /* Auth */,
+				7A0DA9D03067D40300FEC132 /* Posts */,
+				7A0DA9D13067D40400FEC132 /* Navigation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A0DA9CF3067D40100FEC132 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D1930676CBB000F2455 /* WelcomeView.swift */,
+				7AB87D1B30676CC6000F2455 /* SignUpView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7A0DA9D03067D40300FEC132 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D1F30676CDC000F2455 /* BrowseView.swift */,
+				7AB87D2130676CEB000F2455 /* PostDetailView.swift */,
+				7AB87D2330676CF7000F2455 /* CreatePostView.swift */,
+				7AB87D2530676D07000F2455 /* MyPostsView.swift */,
+				7AB87D2730676D15000F2455 /* EditPostView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		7A0DA9D13067D40400FEC132 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D1D30676CCD000F2455 /* MainTabView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		7A0DA9D23067D40500FEC132 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D1730676CAA000F2455 /* SharedComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7A0DA9D33067D45300FEC132 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				7AB87D093067683A000F2455 /* Persistence.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
 		7AB87CE930676827000F2455 = {
 			isa = PBXGroup;
 			children = (
@@ -78,22 +175,13 @@
 			isa = PBXGroup;
 			children = (
 				7AB87D053067683A000F2455 /* Assets.xcassets */,
-				7AB87D063067683A000F2455 /* ContentView.swift */,
 				7AB87D073067683A000F2455 /* lost_found.xcdatamodeld */,
-				7AB87D083067683A000F2455 /* lost_foundApp.swift */,
-				7AB87D093067683A000F2455 /* Persistence.swift */,
-				7AB87D1130676C83000F2455 /* Models.swift */,
-				7AB87D1330676C99000F2455 /* APIClient.swift */,
-				7AB87D1530676C99000F2455 /* AppState.swift */,
-				7AB87D1730676CAA000F2455 /* SharedComponents.swift */,
-				7AB87D1930676CBB000F2455 /* WelcomeView.swift */,
-				7AB87D1B30676CC6000F2455 /* SignUpView.swift */,
-				7AB87D1D30676CCD000F2455 /* MainTabView.swift */,
-				7AB87D1F30676CDC000F2455 /* BrowseView.swift */,
-				7AB87D2130676CEB000F2455 /* PostDetailView.swift */,
-				7AB87D2330676CF7000F2455 /* CreatePostView.swift */,
-				7AB87D2530676D07000F2455 /* MyPostsView.swift */,
-				7AB87D2730676D15000F2455 /* EditPostView.swift */,
+				7A0DA9C93067D3FB00FEC132 /* App */,
+				7A0DA9CA3067D3FC00FEC132 /* Core */,
+				7A0DA9CB3067D3FD00FEC132 /* Models */,
+				7A0DA9CC3067D3FD00FEC132 /* Services */,
+				7A0DA9CD3067D3FE00FEC132 /* ViewModels */,
+				7A0DA9CE3067D3FF00FEC132 /* Views */,
 			);
 			path = "lost-found";
 			sourceTree = "<group>";
